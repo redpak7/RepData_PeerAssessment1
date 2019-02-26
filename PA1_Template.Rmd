@@ -44,7 +44,7 @@ head(sum_steps)
 
 **Q2 Make a histogram of the total number of steps taken each day**
 ```{r}
-hist(sum_steps$steps, col = "blue", xlab = "No. of Steps Taken", main = "Histogram of Total Number of Steps Taken Each day")
+hist(sum_steps$steps, col = "blue", xlab = "No. of Steps Taken", main = "Histogram of Total Number of Steps Taken Each day", breaks = 40)
 ```
 
 **Q3 Calculate and report the mean and median of the total number of steps taken per day**
@@ -109,7 +109,7 @@ I do the following calculations to prepare the data for the new histogram and ca
 sum_steps2<-aggregate(steps~date,r,sum)
 mean_2<-mean(sum_steps2$steps)
 Median_2<-median(sum_steps2$steps)
-hist(sum_steps2$steps, col = "blue", xlab = "No. of Steps Taken", main = "Histogram of Total Number of Steps Taken Each day")
+hist(sum_steps2$steps, col = "blue", xlab = "No. of Steps Taken", main = "Histogram of Total Number of Steps Taken Each day", breaks = 40)
 ```
 
 The mean of the imputed dataset is **`r format(mean_2, scientific = FALSE)`** and the median is **`r format(Median_2, scientific = FALSE)`**.

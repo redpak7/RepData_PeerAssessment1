@@ -70,7 +70,7 @@ Assignment Questions - Section 1
 
 **Q2 Make a histogram of the total number of steps taken each day**
 
-    hist(sum_steps$steps, col = "blue", xlab = "No. of Steps Taken", main = "Histogram of Total Number of Steps Taken Each day")
+    hist(sum_steps$steps, col = "blue", xlab = "No. of Steps Taken", main = "Histogram of Total Number of Steps Taken Each day", breaks = 40)
 
 ![](PA1_Template_files/figure-markdown_strict/unnamed-chunk-3-1.png)
 
@@ -157,7 +157,7 @@ histogram and calculations with the imputed data
     sum_steps2<-aggregate(steps~date,r,sum)
     mean_2<-mean(sum_steps2$steps)
     Median_2<-median(sum_steps2$steps)
-    hist(sum_steps2$steps, col = "blue", xlab = "No. of Steps Taken", main = "Histogram of Total Number of Steps Taken Each day")
+    hist(sum_steps2$steps, col = "blue", xlab = "No. of Steps Taken", main = "Histogram of Total Number of Steps Taken Each day", breaks = 40)
 
 ![](PA1_Template_files/figure-markdown_strict/unnamed-chunk-8-1.png)
 
