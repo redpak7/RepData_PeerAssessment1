@@ -1,7 +1,7 @@
 Introduction
 ------------
 
-This R Markdown document has been created for COursera's "Reproducible
+This R Markdown document has been created for Coursera's "Reproducible
 Research" course for the first Peer Graded Assignment
 
 The data is based on a personal montoring device from an anonymous
